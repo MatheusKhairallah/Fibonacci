@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Fibonacci
 {
@@ -11,16 +11,14 @@ namespace Fibonacci
 
             int f1=0;
             int f2=1;
-            int soma=f1 + f2;
-
-            Console.Write(0 + " " + 1 +" ");
+            int soma = 0;
             
-            for (int i = 3; i <=numero; i++)
+            for (int i = 0; i < numero; i++)
             {
                 Console.Write(soma + " ");
-                f1=f2;
-                f2=soma;
                 soma=f1 + f2;
+                f2=f1;
+                f1=soma;
             }
 
         }
