@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Fibonacci
 {
@@ -18,13 +18,14 @@ namespace Fibonacci
                 Console.WriteLine("Por favor digite um número maior ou igual a 2");
                 Environment.Exit(-1);
             }
+            Console.Write($"{f1} {f2} ");
             
-            for (int i = 0; i <numero; i++)
+            for (int i = 2; i <numero; i++)
             {
-                Console.Write(soma + " ");
                 soma=f1 + f2;
-                f2=f1;
+                f1=f2;
                 f1=soma;
+                Console.Write($"{soma} ");
             }
 
         }
